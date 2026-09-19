@@ -13,11 +13,11 @@ btn.addEventListener("click", (e) => {
 
     if (Number(age.value) >= 18) {
       setTimeout(() => {
-        resolve(`Welcome . You can vote`);
+        resolve(`Welcome ${nam.value}. You can vote`);
       }, 4000);
     } else {
       setTimeout(() => {
-        reject(`Oh sorry . You aren't old enough`);
+        reject(`Oh sorry ${nam.value}. You aren't old enough`);
       }, 4000);
     }
 
